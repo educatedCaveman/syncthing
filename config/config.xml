@@ -7,7 +7,7 @@
         <device id="FYSOV6P-NECPTBC-XY7EUBI-N7OPKXE-DGIAKLE-6VY55Q2-MENKQ3D-QKOKHAC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" introducedBy="">
+        <device id="S32F763-D2P34EG-MFVJKGK-YWUEA3U-PI5CL6C-FVXDXKM-DPGKNBP-2O5Y7QC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -40,7 +40,7 @@
     </folder>
     <folder id="bmznc-u9jwh" label="Music" path="/mnt/Music/library" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" introducedBy="">
+        <device id="S32F763-D2P34EG-MFVJKGK-YWUEA3U-PI5CL6C-FVXDXKM-DPGKNBP-2O5Y7QC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -76,7 +76,7 @@
         <device id="MQISA2C-6OUREOU-IH3QC7Z-QT7TXC5-FR2RVKB-DONZED7-CS7NGEC-P4SOKAP" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" introducedBy="">
+        <device id="S32F763-D2P34EG-MFVJKGK-YWUEA3U-PI5CL6C-FVXDXKM-DPGKNBP-2O5Y7QC" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
         <minDiskFree unit="%">1</minDiskFree>
@@ -137,7 +137,7 @@
         <untrusted>false</untrusted>
         <remoteGUIPort>0</remoteGUIPort>
     </device>
-    <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" name="syncthing" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+    <device id="S32F763-D2P34EG-MFVJKGK-YWUEA3U-PI5CL6C-FVXDXKM-DPGKNBP-2O5Y7QC" name="syncthing" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
         <autoAcceptFolders>false</autoAcceptFolders>
@@ -208,7 +208,7 @@
     <defaults>
         <folder id="" label="" path="~" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
             <filesystemType>basic</filesystemType>
-            <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" introducedBy="">
+            <device id="S32F763-D2P34EG-MFVJKGK-YWUEA3U-PI5CL6C-FVXDXKM-DPGKNBP-2O5Y7QC" introducedBy="">
                 <encryptionPassword></encryptionPassword>
             </device>
             <minDiskFree unit="%">1</minDiskFree>
