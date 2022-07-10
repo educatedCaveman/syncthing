@@ -1,1 +1,3 @@
 config documentation:  https://docs.syncthing.net/users/config.html
+the certs in the config folder are to make sure the ID doesn't change between re-deploys
+    strictly speaking, i think only cert.pem and key.pem are needed.  the rest are included just to be sure.
