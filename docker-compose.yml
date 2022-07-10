@@ -12,9 +12,9 @@ services:
       - TZ=America/New_York
     volumes:
       - /docker/docker-compose/syncthing/config:/config
-      - /mnt/mobius/Music:/mnt/Backup
-      - /mnt/mobius/Documents:/mnt/Backup
-      - /mnt/mobius/Pictures:/mnt/Backup
+      - /mnt/mobius/Music:/mnt/Music
+      - /mnt/mobius/Documents:/mnt/Documents
+      - /mnt/mobius/Pictures:/mnt/Pictures
     ports:
       - 8384:8384
       - 22000:22000/tcp
