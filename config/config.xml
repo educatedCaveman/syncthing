@@ -1,5 +1,44 @@
 <configuration version="36">
-    <folder id="default" label="Default Folder" path="/config/Sync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+    <folder id="bg6s7-ea3uo" label="Documents" path="/mnt/Documents" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <filesystemType>basic</filesystemType>
+        <device id="BNAACCP-MRWRDAD-GXUOF2Q-PZSYXZV-KMGV26Q-RC7UUVQ-ZYYYU65-LGBD4AF" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="FYSOV6P-NECPTBC-XY7EUBI-N7OPKXE-DGIAKLE-6VY55Q2-MENKQ3D-QKOKHAC" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
+        <minDiskFree unit="%">1</minDiskFree>
+        <versioning>
+            <cleanupIntervalS>3600</cleanupIntervalS>
+            <fsPath></fsPath>
+            <fsType>basic</fsType>
+        </versioning>
+        <copiers>0</copiers>
+        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
+        <hashers>0</hashers>
+        <order>random</order>
+        <ignoreDelete>false</ignoreDelete>
+        <scanProgressIntervalS>0</scanProgressIntervalS>
+        <pullerPauseS>0</pullerPauseS>
+        <maxConflicts>10</maxConflicts>
+        <disableSparseFiles>false</disableSparseFiles>
+        <disableTempIndexes>false</disableTempIndexes>
+        <paused>false</paused>
+        <weakHashThresholdPct>25</weakHashThresholdPct>
+        <markerName>.stfolder</markerName>
+        <copyOwnershipFromParent>false</copyOwnershipFromParent>
+        <modTimeWindowS>0</modTimeWindowS>
+        <maxConcurrentWrites>2</maxConcurrentWrites>
+        <disableFsync>false</disableFsync>
+        <blockPullOrder>standard</blockPullOrder>
+        <copyRangeMethod>standard</copyRangeMethod>
+        <caseSensitiveFS>false</caseSensitiveFS>
+        <junctionsAsDirs>false</junctionsAsDirs>
+    </folder>
+    <folder id="bmznc-u9jwh" label="Music" path="/mnt/Music/library" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
         <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" introducedBy="">
             <encryptionPassword></encryptionPassword>
@@ -32,8 +71,11 @@
         <caseSensitiveFS>false</caseSensitiveFS>
         <junctionsAsDirs>false</junctionsAsDirs>
     </folder>
-    <folder id="rdsvx-ruirm" label="Backup" path="/Backup" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+    <folder id="sm-g970u_ek7z-photos" label="Camera" path="/mnt/Pictures/CAMERA" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
+        <device id="MQISA2C-6OUREOU-IH3QC7Z-QT7TXC5-FR2RVKB-DONZED7-CS7NGEC-P4SOKAP" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
@@ -65,6 +107,36 @@
         <caseSensitiveFS>false</caseSensitiveFS>
         <junctionsAsDirs>false</junctionsAsDirs>
     </folder>
+    <device id="BNAACCP-MRWRDAD-GXUOF2Q-PZSYXZV-KMGV26Q-RC7UUVQ-ZYYYU65-LGBD4AF" name="Theseus" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+    </device>
+    <device id="FYSOV6P-NECPTBC-XY7EUBI-N7OPKXE-DGIAKLE-6VY55Q2-MENKQ3D-QKOKHAC" name="carbon" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+    </device>
+    <device id="MQISA2C-6OUREOU-IH3QC7Z-QT7TXC5-FR2RVKB-DONZED7-CS7NGEC-P4SOKAP" name="Positron" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
+        <paused>false</paused>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+    </device>
     <device id="Y7KJFVJ-22O7CL3-F3JDGDJ-XTXVJ6K-GGPGZVV-IZAFG4E-B7LAKLJ-QZSPHQA" name="syncthing" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
