@@ -4,8 +4,8 @@ pipeline {
     environment {
         ANSIBLE_REPO = '/var/lib/jenkins/workspace/ansible_master'
         WEBHOOK = credentials('JENKINS_DISCORD')
-        PORTAINER_DEV_WEBHOOK = credentials('PORTAINER_WEBHOOK_DEV_GUAC')
-        PORTAINER_PRD_WEBHOOK = credentials('PORTAINER_WEBHOOK_PRD_GUAC')
+        // PORTAINER_DEV_WEBHOOK = credentials('PORTAINER_WEBHOOK_DEV_SYNCTHING')
+        PORTAINER_PRD_WEBHOOK = credentials('PORTAINER_WEBHOOK_PRD_SYNCTHING')
     }
 
     //triggering periodically so the code is always present
@@ -14,24 +14,24 @@ pipeline {
 
     stages {
         // deploy code to lv-426.lab, when the branch is 'dev_test'
-        stage('deploy dev code') {
-            when { branch 'dev_test' }
-            steps {
-                // deploy configs to DEV
-                echo 'deploy docker config files (DEV)'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/deploy_docker_compose_dev.yml --extra-vars repo="syncthing"'
-            }
-        }
-        // trigger portainer redeploy
-        // separated out so this only gets run if the ansible playbook doesn't fail
-        stage('redeploy portainer stack (DEV)') {
-            when { branch 'dev_test' }
-            steps {
-                // deploy configs to DEV
-                echo 'Redeploy DEV stack'
-                sh 'http post ${PORTAINER_DEV_WEBHOOK}'
-            }
-        }
+        // stage('deploy dev code') {
+        //     when { branch 'dev_test' }
+        //     steps {
+        //         // deploy configs to DEV
+        //         echo 'deploy docker config files (DEV)'
+        //         sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/deploy_docker_compose_dev.yml --extra-vars repo="syncthing"'
+        //     }
+        // }
+        // // trigger portainer redeploy
+        // // separated out so this only gets run if the ansible playbook doesn't fail
+        // stage('redeploy portainer stack (DEV)') {
+        //     when { branch 'dev_test' }
+        //     steps {
+        //         // deploy configs to DEV
+        //         echo 'Redeploy DEV stack'
+        //         sh 'http post ${PORTAINER_DEV_WEBHOOK}'
+        //     }
+        // }
 
         // deploy code to sevastopol, when the branch is 'master'
         stage('deploy prd code') {
