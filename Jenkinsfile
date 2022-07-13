@@ -22,7 +22,7 @@ pipeline {
                 echo 'deploy docker config files (PRD)'
                 sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/docker/deploy_docker_compose_prd.yml --extra-vars repo="syncthing"'
                 echo 'decrypt repo'
-                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/git-crypt.yml -e repo="syncthing" -e hosts="sevastopol"'
+                sh 'ansible-playbook ${ANSIBLE_REPO}/deploy/git-crypt.yml -e repo="syncthing" -l "sevastopol"'
             }
         }
 
