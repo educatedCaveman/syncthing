@@ -1,0 +1,2 @@
+*.pem filter=git-crypt diff=git-crypt
+csrftokens.txt filter=git-crypt diff=git-crypt
